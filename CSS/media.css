@@ -1,0 +1,13 @@
+@media screen and (max-width:992px) {
+    .max-w-50 {
+        width: 90%;
+    }
+
+    .openButton {
+        align-items: start;
+    }
+
+    .left-menu{
+        width: 65%;
+    }
+}

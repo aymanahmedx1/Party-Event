@@ -1,0 +1,144 @@
+/* ! START GLOBAL */
+:root{
+    --overlay-color:rgba(214, 46, 51 , 0.6);
+    --singer-color:#e68285;
+    --singer-background:#ccc;
+}
+.max-w-50{
+    width: 50%;
+}
+body{
+    overflow: hidden;
+}
+/* ! END GLOBAL */
+/* ^ START LOADER */
+.loadinArea{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 70px;
+    aspect-ratio: .75;
+    --c: no-repeat linear-gradient(var(--overlay-color) 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    animation: l7 1s infinite linear alternate;
+  }
+  @keyframes l7 {
+    0%  {background-size: 20% 50% ,20% 50% ,20% 50% }
+    20% {background-size: 20% 20% ,20% 50% ,20% 50% }
+    40% {background-size: 20% 100%,20% 20% ,20% 50% }
+    60% {background-size: 20% 50% ,20% 100%,20% 20% }
+    80% {background-size: 20% 50% ,20% 50% ,20% 100%}
+    100%{background-size: 20% 50% ,20% 50% ,20% 50% }
+  }
+/* ^ END LOADER */
+
+/* ^ START LEFT MENU  */
+.collapseMenuShadow{
+    box-shadow: 31px 7px 42px 9px rgba(0,0,0,0.52);
+}
+.collapseMenu{
+    background-color: #111;
+    padding-inline: 20px;
+    padding-block: 10px;
+    flex-grow: 1;
+}
+.collapseMenu i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition:color .5s ;
+    color: white;
+    cursor: pointer;
+}
+.collapseMenu ul{
+    list-style: none;
+}
+.collapseMenu ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px;
+     transition:color .5s ;
+}
+.collapseMenu ul li:hover a{
+    color: var(--overlay-color);
+}
+.collapseMenu i:hover {
+    color: var(--overlay-color);
+}
+/* ^ END LEFT MENU  */
+/* * START Home  */
+.home{
+    height: 100vh;
+    background-image: url("../images/events-heavenly-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+}
+.overlay{
+    background-color: var(--overlay-color);
+    height: 100%;
+}
+.home h1{
+    font-size: 60px;
+}
+.left-menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+}
+.openButton{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+/* * END Home  */
+/* & START Singers */
+.singerHead{
+    background-color: var(--singer-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+.singerCollapse{
+    background-color: var(--singer-background);
+}
+/* & END Singers */
+
+/* ^ START duration */
+.duration{
+    background-image: url("../images/invitation-2508607__340.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-color: red;
+}
+.duration .content{
+    height: 150px;
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    margin-block: 10px;
+}
+/* ^ END duration */
+/* * START contact  */
+.contact a{
+    text-decoration: none;
+}
+.contact .content p{
+    line-height: 35px;
+}
+/* * END contact  */
