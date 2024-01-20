@@ -5,9 +5,11 @@
 
     .openButton {
         align-items: start;
+        padding-bottom: 10px;
     }
 
+
     .left-menu{
-        width: 65%;
+        width: 90%;
     }
 }
